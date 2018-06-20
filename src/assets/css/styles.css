@@ -1,0 +1,10 @@
+/* Element styles */
+body {
+    margin-top: 60px;
+}
+
+/* Particular styles */
+
+#logo img{
+    height: 50px;
+}
