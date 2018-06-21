@@ -7,7 +7,7 @@ import { IQuestion, QuestionType } from './question';
 })
 export class QuestionFilterPipe implements PipeTransform {
 
-  transform(questions: IQuestion[], args: any[]): any {
+  transform(questions: IQuestion[], args: string): any {
     return questions.filter(question => question.type.indexOf(args) !== -1);
   }
 

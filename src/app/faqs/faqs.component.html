@@ -1,29 +1,24 @@
 <div class="col-md-10 col-md-offset-1">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <div class="page-header">
-        <h1>Frequently Asked Questions</h1>
-        <h4>Version 2.0</h4>
+  <div class="page-header">
+    <h1>Frequently Asked Questions</h1>
+    <h4>Version 2.0</h4>
+  </div>
+  <section id="main">
+    <div class="panel panel-primary" *ngFor="let questionType of questionTypes">
+      <div class="panel-heading">
+        <h2 class="text-capitalize">{{ questionType.description }}</h2>
       </div>
-    </div>
-    <div class="panel-body">
-      <section id="main">
-        <div class="panel panel-primary" *ngFor="let questionType of questionTypes">
+      <div class="panel-body">
+        <div class="panel panel-info" *ngFor="let question of questionList | questionTypeFilter: questionType.type">
           <div class="panel-heading">
-            <h2 class="text-capitalize">{{ questionType.description }}</h2>
+            <h4>
+              <b>Question: </b>{{ question.question }}</h4>
           </div>
           <div class="panel-body">
-            <div class="panel panel-info" *ngFor="let question of questionList | questionTypeFilter: questionType.type">
-              <div class="panel-heading">
-                <h4><b>Question: </b>{{ question.question }}</h4>
-              </div>
-              <div class="panel-body">
-                <b>Answer: </b>{{ question.answer }}
-              </div>
-            </div>
+            <b>Answer: </b>{{ question.answer }}
           </div>
         </div>
-      </section>
+      </div>
     </div>
-  </div>
+  </section>
 </div>
