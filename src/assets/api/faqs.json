@@ -1,0 +1,78 @@
+{
+    "faqsArray": [
+        {
+            "question": "What is Euroscoreboard?",
+            "answer": "Euroscoreboard is an emulator of the scoreboard used in the finals of the Eurovision Song Contest. It can be used to configurate your own scoreboard selecting the countries you want to participate in the voting, set the voting order and do the voting in the same way it was done until Eurovision Song Contest 2005.",
+            "type": "about"
+        },
+        {
+            "question": "When was it made?",
+            "answer": "I started to work in this version of Euroscoreboard in summer 2006. Summers in Spain can be really boring if you cannot go anywhere and as I was saving money to move to Poland after that summer I had to stay at home and had so much time to make this. But it wasn't the first time I made a version of Euroscoreboard. The first protoype was made in early 2002 shortly after the 2002 contest in Tallinn and it only featured the countries that were supposed to take part in the 2003 contest. One year after, I decided to do an step forward and made the first called 'Euroscoreboard' version. It had only a few options to select the countries to vote and its existence was not so much known.",
+            "type": "about"
+        },
+        {
+            "question": "It's been a long time since the last release. Will there be more?",
+            "answer": "I hope yes but it's hard to say when. Some big changes came to my life since I returned from Poland to Spain in 2007 and I started to work in different IT companies. That's something which takes so much time in my daily life and leaves a few to dedicate to make a new version. But from 2006 to this day, the information technology has changed so much and it's now more interesting than ever, in a world where tablets and smartphones are surrounding us and our classic computers and I think it's something that must be present if a new version of Euroscoreboard is made. Apart from that, I never thought the popularity of Euroscoreboard would reach the boundaries has reached today. When I made that I thought it would only interest the spanish eurovision fan community, but as years go by, I've received -and I'm still receiving- a lot of e-mails from all europe and also outside europe. That's really amazing!! And it gives me a lot of interest in creating a new version, of course :)",
+            "type": "about"
+        },
+        {
+            "question": "I don't speak spanish and all Euroscoreboard (and its documentation) is in spanish. Can you at least release an update in English?",
+            "answer": "When I made Euroscoreboard it was supposed to be used by the spanish eurofans. But it took me some weeks after to realize that Euroscoreboard was something to be used in all Europe. I don't want to say so much but I still own an unreleased update of Euroscoreboard where, among other features, exists the option to translate Euroscoreboard in various languages, including english of course. I hope this update can see the light soon.",
+            "type": "about"
+        },
+        {
+            "question": "What about Azerbaijan or Australia? I cannot select them in the countries list!!",
+            "answer": "The actual release of Euroscoreboard was made in summer 2006, two years before Azerbaijan entered the contest and the idea of Australia taking part in it seemed completely impossible so they wasn't included in the list. Actually the only way to have them is using two of the existing countries in the list and put them as Azerbaijan and Australia in the design. People normally uses Yugoslavia and Seria & Montenegro for this purpose. In the next update, this won't be needed to be done.",
+            "type": "about"
+        },
+        {
+            "question": "When I run Euroscoreboard I'm able to configurate all the countries and the voting, but when I press the 'Actual' button, I have an error message saying something about 'DirectX' or 'Direct3D'",
+            "answer": "This happens because Euroscoreboard uses the DirectX API to run. DirectX is provided and distributed free by Microsoft. You can download the version 9.0c (used by Euroscoreboard) in this <a href='http://www.microsoft.com/en-US/download/details.aspx?id=34429'>LINK</a>. Please, install it and be sure the Direct3D component is installed during the process",
+            "type": "technical"
+        },
+        {
+            "question": "When I run Euroscoreboard I'm able to configurate all the countries and the voting, but when I set the 'Ventana' option and press the 'Actual' button, It shows me a windows with a big and red X and can't do any voting.",
+            "answer": "Please, read the answer to the question mentioned above. This happens because of the same problem",
+            "type": "technical"
+        },
+        {
+            "question": "I've installed Euroscoreboard, but I cannot open it. I got an error message telling me I need .NET Framework",
+            "answer": "You need to install the .NET Framework 2.0 or greater to run Euroscoreboard. Get it in this <a href='http://www.microsoft.com/en-US/download/details.aspx?id=34429'>LINK</a>.",
+            "type": "technical"
+        },
+        {
+            "question": "Who is the author of Euroscoreboard?",
+            "answer": "Please, take a look at the 'Contact' section of this website :)",
+            "type": "author"
+        },
+        {
+            "question": "I've found your facebook profile and I requested your friendship, but it hasn't been accepted :(",
+            "answer": "The explanation is quite simple. I only accept as friends in facebook people who I know personally. We can be in contact by the Euroscoreboard Facebook Group.",
+            "type": "author"
+        },
+        {
+            "question": "Can you give technical support about Euroscoreboard via Facebook Messenger?",
+            "answer": "NO, I won't give it. Some people try to make me give this support in this way and even worse, in my working hours. I won't reply any messages of this kind. If you want to ask me something, post it in the facebook group or send an email to the direction given in the 'Contact' section of this website.",
+            "type": "author"
+        },
+        {
+            "question": "I want to make my own Euroscoreboard!! Can you tell me how to do that?",
+            "answer": "No, I can't. To make Euroscoreboard you need to be a software developer as I am. And it took me some years at University to achieve this. If you want to know the same (or more) than me, you only have to study Computer Science at University... at your own risk :P",
+            "type": "author"
+        }
+    ],
+    "faqTypesArray": [
+        {
+            "type": "about",
+            "description": "About Euroscoreboard"
+        },
+        {
+            "type": "technical",
+            "description": "Technical Questions"
+        },
+        {
+            "type": "author",
+            "description": "About the Author"
+        }
+    ]
+}

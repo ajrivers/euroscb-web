@@ -1,3 +1,24 @@
+/* Class styles */
+.navbar-fixed-bottom div {
+    margin-bottom: 0px;
+}
+
+.panel-heading h2 {
+    color: white;
+}
+
+.panel-info .panel-heading h4 {
+    color: white;
+}
+
+/* .page-header h1 {
+    color: white;
+}
+
+.page-header h4 {
+    color: white;
+} */
+
 /* Element styles */
 body {
     margin-top: 60px;
