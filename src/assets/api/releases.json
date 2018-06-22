@@ -1,16 +1,16 @@
 [
     {
         "title":"Euroscoreboard 2.0 Beta 2",
-        "description": "This is the current and last release of Euroscoreboard to date. It includes two operative ways of voting: the original system called <b>1 point per jury member<b> and the <b>actual</b> system.",
+        "description": "This is the current and last release of Euroscoreboard to date. It includes two operative ways of voting: the original system called 1 point per jury member and the Actual system.",
         "date": "August 2006",
         "downloadUrl": "http://euroscb.blob.core.windows.net/euroscoreboard/euroscb2.0b2.zip",
-        "thumbnail": "../images/euroscb2-thumbail.png"
+        "thumbnail": "../assets/images/euroscb2-thumbail.png"
     },
     {
         "title":"Euroscoreboard 3.0",
         "description": "The next release of Euroscoreboard, currently under development.",
         "date": "Coming Soon",
         "downloadUrl": "#",
-        "thumbnail": ""
+        "thumbnail": "../assets/images/coming-soon.png"
     }
 ]

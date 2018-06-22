@@ -11,13 +11,22 @@
     color: white;
 }
 
+.panel-primary .panel-heading h4 {
+    color: white;
+}
+
 /* Element styles */
 body {
     margin-top: 60px;
+    margin-bottom: 50px;
 }
 
 /* Particular styles */
 
 #logo img{
     height: 50px;
+}
+
+#download-body {
+    padding: 10px;
 }
