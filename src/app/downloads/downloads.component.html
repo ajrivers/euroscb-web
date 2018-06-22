@@ -3,4 +3,50 @@
     <h1>Downloads</h1>
     <h4>All available releases of Euroscoreboard</h4>
   </div>
+  <section id="downloads-main">
+    <div class="panel panel-primary" *ngFor="let download of downloadsList; let i = index">
+      <div class="panel-heading">
+        <h4>{{ download.title }}</h4>
+      </div>
+      <div class="row" id="download-body">
+        <div class="panel-body">
+          <img [src]="download.thumbnail" alt="Preview" class="col-md-2 img-rounded img-responsive">
+          <div class="col-md-8 table-responsive">
+            <table class="table table-bordered">
+              <tr>
+                <td>
+                  <b>Description</b>
+                </td>
+                <td>{{ download.description }}</td>
+              </tr>
+              <tr>
+                <td>
+                  <b>Release Date</b>
+                </td>
+                <td>{{ download.date }}</td>
+              </tr>
+            </table>
+          </div>
+          <a id="download-link-{{ i }}" [href]="download.downloadUrl">
+            <img src="../../assets/images/download.png" alt="Download" class="col-md-2 img-responsive img-thumbnail">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="modal fade" id="notAvailable" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href="#" class="close" data-dismiss="modal">&times;</a>
+      </div>
+      <div class="modal-body">
+        <div class="alert alert-warning">
+            Under Development!!
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
