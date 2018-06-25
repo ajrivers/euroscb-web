@@ -30,3 +30,8 @@ body {
 #download-body {
     padding: 10px;
 }
+
+#selfCarousel{
+    width: 300px;
+    margin: 20px;
+}

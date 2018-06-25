@@ -1,0 +1,30 @@
+[
+    {
+        "url": "../../assets/images/self-1.jpg",
+        "name": "Thinking",
+        "description": "May 2018",
+        "altText": "Thinking",
+        "carouselId": "selfCarousel"
+    },
+    {
+        "url": "../../assets/images/self-2.jpg",
+        "name": "At home",
+        "description": "My workplace at home",
+        "altText": "At home",
+        "carouselId": "selfCarousel"
+    },
+    {
+        "url": "../../assets/images/self-3.jpg",
+        "name": "Bassist",
+        "description": "I'm a bass player!",
+        "altText": "Bassist",
+        "carouselId": "selfCarousel"
+    },
+    {
+        "url": "../../assets/images/self-4.jpg",
+        "name": "City Walk",
+        "description": "A city walk at winter",
+        "altText": "City Walk",
+        "carouselId": "selfCarousel"
+    }
+]

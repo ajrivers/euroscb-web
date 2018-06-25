@@ -8,6 +8,8 @@ import { WelcomeComponent } from './home/welcome.component';
 import { FaqsComponent } from './faqs/faqs.component';
 import { QuestionFilterPipe } from './faqs/question.pipe';
 import { DownloadsComponent } from './downloads/downloads.component';
+import { ContactComponent } from './contact/contact.component';
+import { CarouselComponent } from './shared/carousel.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { DownloadsComponent } from './downloads/downloads.component';
     WelcomeComponent,
     FaqsComponent,
     QuestionFilterPipe,
-    DownloadsComponent
+    DownloadsComponent,
+    ContactComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +27,8 @@ import { DownloadsComponent } from './downloads/downloads.component';
     RouterModule.forRoot([
       { path:'welcome', component: WelcomeComponent },
       { path: 'faqs', component: FaqsComponent },
-      { path: 'downloads', component:DownloadsComponent },
+      { path: 'downloads', component: DownloadsComponent },
+      { path: 'contact', component: ContactComponent },
       { path:'', redirectTo:'welcome', pathMatch:'full' },
       { path:'**', redirectTo:'welcome', pathMatch:'full' }
     ])
