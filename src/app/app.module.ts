@@ -10,6 +10,7 @@ import { QuestionFilterPipe } from './faqs/question.pipe';
 import { DownloadsComponent } from './downloads/downloads.component';
 import { ContactComponent } from './contact/contact.component';
 import { CarouselComponent } from './shared/carousel.component';
+import { ContactFormComponent } from './contact/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CarouselComponent } from './shared/carousel.component';
     QuestionFilterPipe,
     DownloadsComponent,
     ContactComponent,
-    CarouselComponent
+    CarouselComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,

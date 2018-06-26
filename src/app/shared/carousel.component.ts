@@ -1,8 +1,9 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 import { ICarouselItem } from "./carousel-item";
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { catchError } from 'rxjs/operators';
+declare var $: any;
 
 @Component({
   selector: 'app-carousel',
@@ -11,7 +12,7 @@ import { catchError } from 'rxjs/operators';
 })
 export class CarouselComponent implements OnInit {
 
-  @Input() carouselId: string;
+  @Input() carouselId: string;  
   carouselItems: ICarouselItem[];
   fileUrl: string = '../assets/api/carousel-items.json';
 
@@ -36,7 +37,6 @@ export class CarouselComponent implements OnInit {
   ngOnInit(): void {
     this.getCarouselItems().subscribe(
       items => this.carouselItems = items.filter(i => i.carouselId === this.carouselId)
-    );    
+    );
   }
-
 }

@@ -1,17 +1,15 @@
-<div class="col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
-  <div class="carousel slide" [id]='carouselId' data-interval="2000">
+<div class="carousel slide" [id]='carouselId' data-interval="2000">
 
-    <ol class="carousel-indicators">
-      <li [attr.data-target]="'#' + carouselId" [attr.data-slide-to]="i" *ngFor="let item of carouselItems; let i = index" class="{{ isActive(i) ? 'active' : '' }}"></li>
-    </ol>
+  <ol class="carousel-indicators">
+    <li [attr.data-target]="'#' + carouselId" [attr.data-slide-to]="i" *ngFor="let item of carouselItems; let i = index" class="{{ isActive(i) ? 'active' : '' }}"></li>
+  </ol>
 
-    <div class="carousel-inner">
-      <div class="item {{ isActive(i) ? 'active' : '' }}" *ngFor="let item of carouselItems; let i = index">
-        <img [src]='item.url' [alt]='item.altText' class="img-responsive">
-        <div class="carousel-caption">
-          <h2>{{ item.name }}</h2>
-          <p>{{ item.description }}</p>
-        </div>
+  <div class="carousel-inner">
+    <div class="item {{ isActive(i) ? 'active' : '' }}" *ngFor="let item of carouselItems; let i = index">
+      <img [src]='item.url' [alt]='item.altText' class="img-responsive">
+      <div class="carousel-caption">
+        <h4>{{ item.name }}</h4>
+        <p>{{ item.description }}</p>
       </div>
     </div>
   </div>
