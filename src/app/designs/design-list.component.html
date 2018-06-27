@@ -1,0 +1,23 @@
+<div class="col-md-10 col-md-offset-1">
+  <div class="page-header">
+    <h1>Designs</h1>
+    <h4>The official index of Euroscoreboard designs</h4>
+  </div>
+
+  <section class="designs-main">
+    <ul class="nav nav-tabs nav-justified">
+      <li class="active"><a href="#directoryTab" data-toggle="tab">Directory</a></li>
+      <li><a href="#">Submission Form</a></li>
+      <li><a href="#">How to submit</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <div class="well tab-pane active" id="directoryTab">
+        <div class="panel panel-default" *ngFor="let item of designItems">
+          <div class="panel-heading">{{ item.name }}</div>
+          <div class="panel-body"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

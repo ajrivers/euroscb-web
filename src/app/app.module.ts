@@ -11,6 +11,7 @@ import { DownloadsComponent } from './downloads/downloads.component';
 import { ContactComponent } from './contact/contact.component';
 import { CarouselComponent } from './shared/carousel.component';
 import { ContactFormComponent } from './contact/contact-form.component';
+import { DesignListComponent } from './designs/design-list.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ContactFormComponent } from './contact/contact-form.component';
     DownloadsComponent,
     ContactComponent,
     CarouselComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    DesignListComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +33,7 @@ import { ContactFormComponent } from './contact/contact-form.component';
       { path: 'faqs', component: FaqsComponent },
       { path: 'downloads', component: DownloadsComponent },
       { path: 'contact', component: ContactComponent },
+      { path: 'designs', component: DesignListComponent },
       { path:'', redirectTo:'welcome', pathMatch:'full' },
       { path:'**', redirectTo:'welcome', pathMatch:'full' }
     ])
