@@ -6,18 +6,78 @@
 
   <section class="designs-main">
     <ul class="nav nav-tabs nav-justified">
-      <li class="active"><a href="#directoryTab" data-toggle="tab">Directory</a></li>
-      <li><a href="#">Submission Form</a></li>
-      <li><a href="#">How to submit</a></li>
+      <li class="active">
+        <a href="#directoryTab" data-toggle="tab">Directory</a>
+      </li>
+      <li>
+        <a href="#submissionTab" data-toggle="tab">Submission Form</a>
+      </li>
+      <li>
+        <a href="#instructionsTab" data-toggle="tab">How to submit</a>
+      </li>
     </ul>
 
     <div class="tab-content">
       <div class="well tab-pane active" id="directoryTab">
-        <div class="panel panel-default" *ngFor="let item of designItems">
+        <div class="panel panel-success">
+          <div class="panel-heading">Search</div>
+          <div class="panel-body">
+            <form action="" class="form-inline" id="searchDesignForm">
+              <div class="form-group">
+                <label for="nameFilter" class="control-label col-md-2">Name</label>
+                <div class="col-md-10">
+                  <input type="text" name="nameFilter" class="form-control" placeholder="Design Name">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="panel panel-info" *ngFor="let item of designItems">
           <div class="panel-heading">{{ item.name }}</div>
-          <div class="panel-body"></div>
+          <div class="row" id="directory-body">
+            <div class="panel-body">
+              <div class="col-md-3">
+                <img [src]="item.thumbnail" [alt]="item.name" class="img-responsive">
+              </div>
+              <div class="col-md-7 table-responsive">
+                <table class="table table-bordered table-striped">
+                  <tr>
+                    <td>
+                      <b>Author</b>
+                    </td>
+                    <td>{{ item.author }}</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b>Description</b>
+                    </td>
+                    <td>{{ item.description }}</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b>Compatibility</b>
+                    </td>
+                    <td>{{ item.euroscbVersion }}</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b>Comments</b>
+                    </td>
+                    <td>{{ item.comments }}</td>
+                  </tr>
+                </table>                
+              </div>
+              <div class="col-md-2">
+                <a [href]="item.downloadUrl">
+                  <img src="../../assets/images/download.png" alt="Download" class="img-responsive img-thumbnail">
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <div class="well tab-pane" id="submissionTab"></div>
+      <div class="well tab-pane" id="instructionsTab"></div>
     </div>
   </section>
 </div>
