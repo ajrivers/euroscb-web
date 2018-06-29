@@ -22,17 +22,25 @@
         <div class="panel panel-success">
           <div class="panel-heading">Search</div>
           <div class="panel-body">
-            <form action="" class="form-inline" id="searchDesignForm">
+            <form action="" class="form-horizontal" id="searchDesignForm">
               <div class="form-group">
                 <label for="nameFilter" class="control-label col-md-2">Name</label>
                 <div class="col-md-10">
-                  <input type="text" name="nameFilter" class="form-control" placeholder="Design Name">
+                  <input type="text" name="nameFilter" class="form-control" placeholder="Design Name" [(ngModel)]='listFilter'>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="versionFilter" class="control-label col-md-2">Compatibility</label>
+                <div class="col-md-10">
+                  <select name="versionFilter" id="versionFilter" class="form-control" [(ngModel)]='typeFilter'>
+                    <option *ngFor='let version of designVersions' [value]="version.toLocaleLowerCase()">{{ version }}</option>
+                  </select>
                 </div>
               </div>
             </form>
           </div>
         </div>
-        <div class="panel panel-info" *ngFor="let item of designItems">
+        <div class="panel panel-info" *ngFor="let item of filteredDesignItems">
           <div class="panel-heading">{{ item.name }}</div>
           <div class="row" id="directory-body">
             <div class="panel-body">

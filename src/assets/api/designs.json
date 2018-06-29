@@ -4,7 +4,7 @@
         "name": "Eurovision 2018",
         "description": "Design inspired in Eurovision 2018 scoreboard",
         "author": "Lucas",
-        "euroscbVersion": "Euroscoreboard 2.0",
+        "euroscbVersion": "Euroscoreboard 2.0 (Actual)",
         "comments": "Azerbaijan is placed instead of Liechtenstein and Australia istead of Serbia & Montenegro",
         "thumbnail": "../assets/images/designs/euro2018.png",
         "downloadUrl": "http://www.mediafire.com/file/sp5cp0obm4ben4k/2018%20euroscoreboard.zip"
@@ -14,7 +14,7 @@
         "name": "Junior Eurovision 2017",
         "description": "Design inspired in Junior Eurovision 2017 scoreboard",
         "author": "Lucas",
-        "euroscbVersion": "Euroscoreboard 2.0",
+        "euroscbVersion": "Euroscoreboard 2.0 (Actual)",
         "comments": "Azerbaijan is placed instead of Liechtenstein and Australia istead of Serbia & Montenegro",
         "thumbnail": "../assets/images/designs/jeuro2017.jpg",
         "downloadUrl": "http://www.mediafire.com/file/a3mbubov437s7ua/2017_junior_euroscoreboard.zip"
@@ -24,9 +24,19 @@
         "name": "Glossy Scoreboard",
         "description": "Glossy design for Euroscoreboard",
         "author": "sefHR",
-        "euroscbVersion": "Euroscoreboard 2.0",
+        "euroscbVersion": "Euroscoreboard 2.0 (Actual)",
         "comments": "No comments added",
         "thumbnail": "../assets/images/designs/glossy.png",
         "downloadUrl": "https://drive.google.com/file/d/0B4wp6foySKOJTlA1M19RbmpIWlk/view"
+    },
+    {
+        "id": "4",
+        "name": "Eurovision 1968",
+        "description": "Design inspired in Eurovision 1968 scoreboard",
+        "author": "Lucas",
+        "euroscbVersion": "Euroscoreboard 2.0 (1 point per jm)",
+        "comments": "No comments added",
+        "thumbnail": "../assets/images/designs/euro1968.png",
+        "downloadUrl": "http://www.mediafire.com/file/4r741ggl5lydqve/1968_euroscoreboard.zip"
     }
 ]
